@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class RecipeForCold
+public class RecipeCold extends Recipes
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -13,7 +13,7 @@ public class RecipeForCold
     /**
      * Constructor for objects of class RecipeForCold
      */
-    public RecipeForCold()
+    public RecipeCold()
     {
         // initialise instance variables
         x = 0;
