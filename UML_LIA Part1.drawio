@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.1">
   <diagram name="Page-1" id="15-8oizVke9EP0cR1QJH">
-    <mxGraphModel dx="712" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1196" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zN82dCM6DJEea8iMF7fl-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="350" width="230" x="400" y="500" as="geometry" />
-        </mxCell>
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="RecipeBook" vertex="1">
           <mxGeometry height="20" width="240" x="160" y="120" as="geometry" />
         </mxCell>
@@ -17,10 +14,10 @@
           <mxGeometry height="120" width="240" x="160" y="200" as="geometry" />
         </mxCell>
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Recipe (abstract)" vertex="1">
-          <mxGeometry height="20" width="250" x="440" y="120" as="geometry" />
+          <mxGeometry height="20" width="250" x="440" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fields&lt;div&gt;# title : String&lt;/div&gt;&lt;div&gt;# ingredients : ArrayList&amp;lt;Ingredient&amp;gt;&lt;/div&gt;&lt;div&gt;# ratings : ArrayList&amp;lt;Rating&amp;gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="250" x="440" y="140" as="geometry" />
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fields&lt;div&gt;# title : String&lt;/div&gt;&lt;div&gt;# servings : double&lt;/div&gt;&lt;div&gt;# ingredients : ArrayList&amp;lt;Ingredient&amp;gt;&lt;/div&gt;&lt;div&gt;# ratings : ArrayList&amp;lt;Rating&amp;gt;&lt;/div&gt;&lt;div&gt;# steps : ArrayList&amp;lt;Step&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="440" y="50" as="geometry" />
         </mxCell>
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-30" edge="1" parent="1" source="WlJFJ-t4EAJtp3qDrrlM-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-21">
           <mxGeometry relative="1" as="geometry" />
@@ -28,8 +25,8 @@
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-31" edge="1" parent="1" source="WlJFJ-t4EAJtp3qDrrlM-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Methods&lt;div&gt;+ Recipe(title : String, servings : int)&lt;/div&gt;&lt;div&gt;+ getTitle() : String&lt;/div&gt;&lt;div&gt;+ addIngredient(ingredient : Ingredient) : void&lt;/div&gt;&lt;div&gt;+ getAverageRating() : double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="250" x="440" y="210" as="geometry" />
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Methods&lt;div&gt;+ Recipe(title : String, servings : int)&lt;/div&gt;&lt;div&gt;+ getTitle() : String&lt;/div&gt;&lt;div&gt;+ addIngredient(ingredient : Ingredient) : void&lt;/div&gt;&lt;div&gt;+ getAverageRating() : double&lt;/div&gt;&lt;div&gt;+addSteps(step : Step) : void&lt;/div&gt;&lt;div&gt;+getStepCount : int&lt;/div&gt;&lt;div&gt;+getDifficulty : Difficulty&lt;/div&gt;&lt;div&gt;+printSteps : void&lt;/div&gt;&lt;div&gt;+ scale(newServings : double) : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="440" y="140" as="geometry" />
         </mxCell>
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Ingredient" vertex="1">
           <mxGeometry height="20" width="320" x="80" y="350" as="geometry" />
@@ -37,7 +34,7 @@
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Fields&lt;div&gt;- name :&amp;nbsp; String&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="320" x="80" y="370" as="geometry" />
         </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="&lt;div&gt;Methods&lt;/div&gt;+ Ingredient(name : String, quantity : Quantity, unit : Unit)&lt;div&gt;+ getName() : String&lt;/div&gt;" vertex="1">
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="&lt;div&gt;Methods&lt;/div&gt;+ Ingredient(name : String, quantity : Quantity, unit : Unit)&lt;div&gt;+ getName() : String&lt;/div&gt;&lt;div&gt;+ scale (factor : double) : void&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="320" x="80" y="410" as="geometry" />
         </mxCell>
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Rating" vertex="1">
@@ -79,26 +76,44 @@
         <mxCell id="WlJFJ-t4EAJtp3qDrrlM-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Inheritance" vertex="1">
           <mxGeometry height="30" width="60" x="535" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Another enum for the recipes in the different sections of the RecipeBook (We could name it &quot;Tag&quot; or &quot;Section&quot; or something" vertex="1">
-          <mxGeometry height="80" width="200" x="415" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We also need an enum for the measuring units" vertex="1">
-          <mxGeometry height="40" width="200" x="415" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We need one for the steps (how many steps that the recipes take) : we could also add a difficulty to the recipes based on the number of steps" vertex="1">
-          <mxGeometry height="100" width="200" x="415" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We could also add a Quantity to handle the part where we have to scale recipes (which also needs to use the unit enum)&amp;nbsp;" vertex="1">
-          <mxGeometry height="80" width="200" x="415" y="760" as="geometry" />
-        </mxCell>
         <mxCell id="zN82dCM6DJEea8iMF7fl-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The two subclasses of Recipe (easier to have more general subclasses instead of having Soup, Drink, Appetizer, etc.)" vertex="1">
           <mxGeometry height="40" width="280" x="425" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="zN82dCM6DJEea8iMF7fl-32" edge="1" parent="1" source="zN82dCM6DJEea8iMF7fl-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-33">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;Unit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="170" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="zN82dCM6DJEea8iMF7fl-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="This part could take care of the specific type of Recipe" vertex="1">
-          <mxGeometry height="50" width="110" x="670" y="575" as="geometry" />
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-2" parent="an6OE7BeDyXfHj1jGh5R-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="GRAMMES&lt;div&gt;MILLILITER&lt;/div&gt;&lt;div&gt;CUP&lt;/div&gt;&lt;div&gt;TEASPOON&lt;/div&gt;&lt;div&gt;TABLESPOON&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-6" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;Tag&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="140" x="670" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-7" parent="an6OE7BeDyXfHj1jGh5R-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="DESSERT&lt;div&gt;MAIN_COURSE&lt;/div&gt;&lt;div&gt;SIDE_DISHE&lt;/div&gt;&lt;div&gt;APPETIZER&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Step" vertex="1">
+          <mxGeometry height="70" width="335" x="440" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-9" parent="an6OE7BeDyXfHj1jGh5R-8" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Fields&lt;div&gt;- instruction : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="335" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-12" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;Difficulty&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="395" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-13" parent="an6OE7BeDyXfHj1jGh5R-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="EASY&lt;div&gt;MEDIUM&lt;/div&gt;&lt;div&gt;HARD&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-14" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Quantity" vertex="1">
+          <mxGeometry height="100" width="250" x="375" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-15" parent="an6OE7BeDyXfHj1jGh5R-14" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Fields&lt;div&gt;amount : double&lt;/div&gt;&lt;div&gt;unit : Unit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-23" parent="1" style="text;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Methods&lt;div&gt;+ Quantity (amount : double, unit : Unit)&lt;/div&gt;&lt;div&gt;+ getAmount : double&lt;/div&gt;&lt;div&gt;+ getUnit : Unit&lt;/div&gt;&lt;div&gt;+ scale(factor : double) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="375" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="an6OE7BeDyXfHj1jGh5R-10" parent="1" style="text;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Methods&lt;div&gt;+ Step ( instruction : String)&lt;/div&gt;&lt;div&gt;+getInstruction() : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="335" x="440" y="580" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
