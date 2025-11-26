@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.1">
+  <diagram name="Page-1" id="15-8oizVke9EP0cR1QJH">
+    <mxGraphModel dx="712" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zN82dCM6DJEea8iMF7fl-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="350" width="230" x="400" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="RecipeBook" vertex="1">
+          <mxGeometry height="20" width="240" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Fields&lt;div&gt;- title : String&lt;/div&gt;&lt;div&gt;- recipes : ArrayList&amp;lt;Recipe&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="240" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Methods&lt;div&gt;+ RecipeBook(title : String)&lt;/div&gt;&lt;div&gt;+ addRecipe(recipe : Recipe) : void&lt;/div&gt;&lt;div&gt;+ listAllRecipes() : ArrayList&amp;lt;Recipe&amp;gt;&lt;/div&gt;&lt;div&gt;+ printBookDetails() : void&lt;/div&gt;&lt;div&gt;+ getTopRatedRecipes() : ArrayList&amp;lt;Recipe&amp;gt;&lt;/div&gt;&lt;div&gt;+ getRecipe(title : String)&amp;nbsp; : Recipe&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="160" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Recipe (abstract)" vertex="1">
+          <mxGeometry height="20" width="250" x="440" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fields&lt;div&gt;# title : String&lt;/div&gt;&lt;div&gt;# ingredients : ArrayList&amp;lt;Ingredient&amp;gt;&lt;/div&gt;&lt;div&gt;# ratings : ArrayList&amp;lt;Rating&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="250" x="440" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-30" edge="1" parent="1" source="WlJFJ-t4EAJtp3qDrrlM-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-31" edge="1" parent="1" source="WlJFJ-t4EAJtp3qDrrlM-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Methods&lt;div&gt;+ Recipe(title : String, servings : int)&lt;/div&gt;&lt;div&gt;+ getTitle() : String&lt;/div&gt;&lt;div&gt;+ addIngredient(ingredient : Ingredient) : void&lt;/div&gt;&lt;div&gt;+ getAverageRating() : double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="440" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Ingredient" vertex="1">
+          <mxGeometry height="20" width="320" x="80" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Fields&lt;div&gt;- name :&amp;nbsp; String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="80" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="&lt;div&gt;Methods&lt;/div&gt;+ Ingredient(name : String, quantity : Quantity, unit : Unit)&lt;div&gt;+ getName() : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="320" x="80" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Rating" vertex="1">
+          <mxGeometry height="20" width="240" x="120" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Fields&lt;div&gt;- score : int&lt;/div&gt;&lt;div&gt;- comment : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="240" x="120" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Methods&lt;div&gt;+ Rating(score : int, comment : String)&lt;/div&gt;&lt;div&gt;+getScore() : int&lt;/div&gt;&lt;div&gt;+getComment() : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="120" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="RecipeAdder" vertex="1">
+          <mxGeometry height="20" width="240" x="120" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Fields&lt;div&gt;- scanner : Scanner&lt;/div&gt;&lt;div&gt;- recipeBook : RecipeBook&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="240" x="120" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;container=0;" value="Methods&lt;div&gt;+ RecipeAdder(recipeBook : RecipeBook)&lt;/div&gt;&lt;div&gt;+ addNewRecipe() : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="120" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RecipeCold" vertex="1">
+          <mxGeometry height="20" width="120" x="440" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fields" vertex="1">
+          <mxGeometry height="30" width="120" x="440" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Methods" vertex="1">
+          <mxGeometry height="30" width="120" x="440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RecipeHot" vertex="1">
+          <mxGeometry height="20" width="120" x="570" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fields" vertex="1">
+          <mxGeometry height="30" width="120" x="570" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Methods" vertex="1">
+          <mxGeometry height="30" width="120" x="570" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Inheritance" vertex="1">
+          <mxGeometry height="30" width="60" x="535" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Another enum for the recipes in the different sections of the RecipeBook (We could name it &quot;Tag&quot; or &quot;Section&quot; or something" vertex="1">
+          <mxGeometry height="80" width="200" x="415" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We also need an enum for the measuring units" vertex="1">
+          <mxGeometry height="40" width="200" x="415" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We need one for the steps (how many steps that the recipes take) : we could also add a difficulty to the recipes based on the number of steps" vertex="1">
+          <mxGeometry height="100" width="200" x="415" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJFJ-t4EAJtp3qDrrlM-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="We could also add a Quantity to handle the part where we have to scale recipes (which also needs to use the unit enum)&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="200" x="415" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="zN82dCM6DJEea8iMF7fl-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The two subclasses of Recipe (easier to have more general subclasses instead of having Soup, Drink, Appetizer, etc.)" vertex="1">
+          <mxGeometry height="40" width="280" x="425" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zN82dCM6DJEea8iMF7fl-32" edge="1" parent="1" source="zN82dCM6DJEea8iMF7fl-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WlJFJ-t4EAJtp3qDrrlM-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN82dCM6DJEea8iMF7fl-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="This part could take care of the specific type of Recipe" vertex="1">
+          <mxGeometry height="50" width="110" x="670" y="575" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
