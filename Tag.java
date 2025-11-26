@@ -1,0 +1,3 @@
+public enum Tag{
+    DESSERT, MAIN_COURSE, SIDE_DISH, APPETIZER, UNKNOWN;
+}
