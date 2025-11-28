@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Ingredients here.
+ * Write a description of class Rating here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Ingredients
+public class Rating
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Ingredients
+     * Constructor for objects of class Rating
      */
-    public Ingredients()
+    public Rating()
     {
         // initialise instance variables
         x = 0;

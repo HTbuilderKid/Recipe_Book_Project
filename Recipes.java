@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Write a description of class Recipes here.
@@ -5,18 +6,20 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Recipes
+public abstract class Recipes
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    protected String title;
+    protected double servings;
+    protected ArrayList<Ingredient> ingredients;
+    protected ArrayList<Rating> ratings;
+    protected ArrayList<Step> steps;
+    
     /**
      * Constructor for objects of class Recipes
      */
     public Recipes()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -25,9 +28,27 @@ public class Recipes
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void addIngredient(Ingredient ingredient){
+        
+    }
+    
+    public void addStep(Step step){
+        
+    }
+    
+    public void addRating (Rating rating){
+        
+    }
+    
+    public void addTag(Tag tag){
+        
+    }
+    
+    public void scale(double newServings){
+        
+    }
+    
+    public void printDetails(){
+        
     }
 }
