@@ -1,5 +1,3 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -38,5 +36,23 @@ public class RecipeBookTest
     @AfterEach
     public void tearDown()
     {
+        
+    }
+
+    @Test
+    public void testPrintBookDetails()
+    {
+        RecipeAdder recipeAd1 = new RecipeAdder();
+        RecipeBook recipeBo1 = new RecipeBook("Avocado", "Mo Camole");
+        recipeBo1.printBookDetails();
+    }
+
+    @Test
+    public void testListAllRecipes()
+    {
+        RecipeBook recipeBo1 = new RecipeBook("Mohammad", "Willy Wonders");
+        recipeBo1.listAllRecipes();
     }
 }
+
+

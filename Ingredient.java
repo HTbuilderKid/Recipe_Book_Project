@@ -8,7 +8,6 @@
 public class Ingredient
 {
     private String name;
-    private Quantity quantity;
     private Unit unit;
 
     /**

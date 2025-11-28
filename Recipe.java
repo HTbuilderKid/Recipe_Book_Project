@@ -9,7 +9,7 @@ import java.util.HashSet;
 public abstract class Recipe
 {
     protected String title;
-    protected int servings;
+    protected double servings;
     protected ArrayList<Ingredient> ingredients;
     protected ArrayList<Rating> ratings;
     protected ArrayList<Step> steps;
@@ -18,7 +18,7 @@ public abstract class Recipe
     /**
      * Constructor for objects of class Recipes
      */
-    public Recipe(String title, int servings)
+    public Recipe(String title, double servings)
     {
         this.title = title;
         this.servings = servings;
@@ -26,6 +26,14 @@ public abstract class Recipe
         this.steps = new ArrayList<>();
         this.tags = new HashSet<>();
         this.ratings = new ArrayList<>();
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+    
+    public double getServings() {
+        return servings;
     }
 
     /**

@@ -5,17 +5,14 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class RecipeHot extends Recipes
+public class RecipeHot extends Recipe
 {
-    
-
     /**
-     * Constructor for objects of class RecipeForHot
+     * Constructor for objects of class RecipeForCold
      */
-    public RecipeHot()
+    public RecipeHot(String title, int servings)
     {
-        // initialise instance variables
-        
+        super(title, servings);
     }
 
     /**

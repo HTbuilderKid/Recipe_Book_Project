@@ -35,5 +35,20 @@ public class RecipeBook
             System.out.println("No recipes in the book.");
             return;
         }
+        
+        for (Recipe r : recipes) {
+            System.out.println("- " + r.getTitle());
+        }
+    }
+    
+    public ArrayList<Recipe> searchByTitle(String text) {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r.getTitle().toLowerCase().contains(text.toLowerCase())) {
+                results.add(r);
+            }
+        }
+        return results;
     }
 }
+
