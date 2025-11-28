@@ -1,25 +1,31 @@
 import java.util.ArrayList;
-
+import java.util.HashSet;
 /**
  * Write a description of class Recipes here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public abstract class Recipes
+public abstract class Recipe
 {
     protected String title;
-    protected double servings;
+    protected int servings;
     protected ArrayList<Ingredient> ingredients;
     protected ArrayList<Rating> ratings;
     protected ArrayList<Step> steps;
+    protected HashSet<Tag> tags;
     
     /**
      * Constructor for objects of class Recipes
      */
-    public Recipes()
+    public Recipe(String title, int servings)
     {
-        
+        this.title = title;
+        this.servings = servings;
+        this.ingredients = new ArrayList<>();
+        this.steps = new ArrayList<>();
+        this.tags = new HashSet<>();
+        this.ratings = new ArrayList<>();
     }
 
     /**
