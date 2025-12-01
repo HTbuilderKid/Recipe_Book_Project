@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 /**
- * Write a description of class Recipes here.
+ * Write a description of class RecipeForHot here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public abstract class Recipe

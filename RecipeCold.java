@@ -1,8 +1,8 @@
 
 /**
- * Write a description of class RecipeForCold here.
+ * Write a description of class RecipeForHot here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public class RecipeCold extends Recipe
