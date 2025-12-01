@@ -2,7 +2,7 @@
 /**
  * Write a description of class Step here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public class Step
@@ -14,10 +14,21 @@ public class Step
     /**
      * Constructor for objects of class Step
      */
-    public Step()
+    public Step(int number, String description)
     {
-        
+        this.number = number;
+        this.description = description;
     }
 
+    public int number(){
+        return number;
+    }
     
+    public String description(){
+        return description;
+    }
+    
+    public String toString(){
+        return number + ". " + description;
+    }
 }

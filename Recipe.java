@@ -3,7 +3,7 @@ import java.util.HashSet;
 /**
  * Write a description of class Recipes here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public abstract class Recipe
@@ -43,26 +43,34 @@ public abstract class Recipe
      * @return    the sum of x and y
      */
     public void addIngredient(Ingredient ingredient){
-        
+        ingredients.add(ingredient);
     }
     
     public void addStep(Step step){
-        
+        steps.add(step);
     }
     
     public void addRating (Rating rating){
-        
+        ratings.add(rating);
     }
     
     public void addTag(Tag tag){
-        
+        tags.add(tag);
     }
     
     public void scale(double newServings){
-        
+        for(Ingredient i : ingredients){
+            double factor = newServings/servings;
+        }
     }
     
     public void printDetails(){
-        
+        System.out.println("=== Recipe ===");
+        System.out.println("Title: " + title);
+        System.out.println("Serving: " + servings);
+        System.out.println("Ingredients: " + ingredients );
+        System.out.println("Steps: " + steps);
+        System.out.println("Ratings: " + ratings);
+        System.out.println("Tag: " + tags);
     }
 }

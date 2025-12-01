@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=RecipeBook
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeBook\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=title\ author
+comment1.target=RecipeBook(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RecipeBook\r\n
+comment2.params=
+comment2.target=void\ printBookDetails()
+comment3.params=
+comment3.target=void\ listAllRecipes()
+comment4.params=text
+comment4.target=java.util.ArrayList\ searchByTitle(java.lang.String)
+numComments=5

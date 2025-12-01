@@ -2,7 +2,7 @@
 /**
  * Write a description of class Rating here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public class Rating
@@ -13,10 +13,21 @@ public class Rating
     /**
      * Constructor for objects of class Rating
      */
-    public Rating()
+    public Rating(int scoreOutOfFive, String comment)
     {
-        
+        this.score= scoreOutOfFive;
+        this.comment = comment;
+    }
+    
+    public int getScore(){
+        return score;
+    }
+    
+    public String getComment(){
+        return comment;
     }
 
-    
+    public String toString(){
+        return score + "/5 " + comment;
+    }
 }

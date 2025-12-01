@@ -2,7 +2,7 @@
 /**
  * Write a description of class RecipeForHot here.
  *
- * @author (your name)
+ * @author (Varshiha)
  * @version (a version number or a date)
  */
 public class RecipeHot extends Recipe
@@ -21,8 +21,16 @@ public class RecipeHot extends Recipe
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printDetails()
-    {
-        
+    public void printDetails(){
+        System.out.println("=== Recipe Hot ===");
+        System.out.println("Title: " + title);
+        System.out.println("Serving: " + servings);
+        System.out.println("Ingredients: " + ingredients );
+        System.out.println("Total Ingredients: " + ingredients.size());
+        System.out.println("Steps: " + steps);
+        System.out.println("Total Steps: " + steps.size());
+        System.out.println("Ratings: " + ratings);
+        System.out.println("Total Ratings: " + ratings.size());
+        System.out.println("Tag: " + tags);
     }
 }
