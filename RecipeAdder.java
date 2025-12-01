@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Write a description of class RecipeAdder here.
  *
- * @author (your name)
+ * @author (Chenyu)
  * @version (a version number or a date)
  */
 public class RecipeAdder
