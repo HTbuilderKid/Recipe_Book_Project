@@ -121,4 +121,33 @@ public class RecipeBook
         }
         return null;
     }
+    
+    public void printRecipeDetails(String title) {
+        Recipe r = findByExactTitle(title);
+        // We need a case to handle the case where the Recipe isn't found
+        if (r == null) {
+            System.out.println("Recipe not found.");
+            return;
+        }
+        
+        System.out.println("=== " + r.getTitle() + " ===");
+        System.out.println("Servings: " + r.getServings());
+        System.out.println("Difficulty: " + r.getDifficulty());
+        System.out.println("Rating: " + r.getRating());
+        System.out.println("\nIngredient:");
+        for (Ingredient ing : r.getIngredients()) {
+            System.out.println("* " + ing);
+        }
+        
+        System.out.println("\nSteps:");
+        int num = 1;
+        for (Step s : r.getSteps()) {
+            System.out.println(num + ". " + s.getDescription());
+            num++;
+        }
+        System.out.println("\nTags:");
+        for (Tag t : r.getTags()) {
+            System.out.println("- " + t);
+        }
+    }
 }
