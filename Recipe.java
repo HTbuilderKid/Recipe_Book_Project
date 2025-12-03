@@ -46,12 +46,22 @@ public abstract class Recipe
         ingredients.add(ingredient);
     }
     
+    public ArrayList<Ingredient> getIngredients(){
+        return ingredients;
+    }
     public void addStep(Step step){
         steps.add(step);
+    }
+    public ArrayList<Step> getSteps(){
+        return steps;
     }
     
     public void addRating (Rating rating){
         ratings.add(rating);
+    }
+    
+    public ArrayList<Rating> getRatings(){
+        return ratings;
     }
     
     public void addTag(Tag tag){
@@ -59,9 +69,11 @@ public abstract class Recipe
     }
     
     public void scale(double newServings){
+        double factor = newServings/servings;
         for(Ingredient i : ingredients){
-            double factor = newServings/servings;
+            //i.scale(factor); (ingredients method doesn't have scale yet)
         }
+        servings = newServings;
     }
     
     public void printDetails(){

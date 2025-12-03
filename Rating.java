@@ -13,9 +13,11 @@ public class Rating
     /**
      * Constructor for objects of class Rating
      */
-    public Rating(int scoreOutOfFive, String comment)
+    public Rating(int score, String comment)
     {
-        this.score= scoreOutOfFive;
+        if(score >= 0 && score <= 5){
+            this.score = score;
+        }
         this.comment = comment;
     }
     
@@ -25,6 +27,12 @@ public class Rating
     
     public String getComment(){
         return comment;
+    }
+    
+    public void changeScore(int newScore){
+        if(newScore >= 0 && newScore <= 5){
+            this.score = newScore;
+        }
     }
 
     public String toString(){
