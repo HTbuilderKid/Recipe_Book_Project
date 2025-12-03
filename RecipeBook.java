@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-//import java.util.Collections;
+
 /**
  * Write a description of class RecipeBook here.
  *
@@ -33,6 +32,10 @@ public class RecipeBook
         System.out.println("Total Recipes: " + recipes.size());
     }
     
+    public void addRecipe(Recipe r) {
+        recipes.add(r);
+    }
+    
     /**
      * The listAllRecipes method, 
      */
@@ -45,6 +48,26 @@ public class RecipeBook
         for (Recipe r : recipes) {
             System.out.println("- " + r.getTitle());
         }
+    }
+    
+    public ArrayList<Recipe> listHotRecipes() {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r instanceof RecipeHot) {  // we can use the "instanceof" keyword to determine whether r is a specific instannce of the RecipeHot class
+                results.add(r); 
+            }
+        }
+        return results;
+    }
+    
+    public ArrayList<Recipe> listColdRecipes() {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r instanceof RecipeCold) {
+                results.add(r);
+            }
+        }
+        return results;
     }
     
     /**
@@ -88,10 +111,43 @@ public class RecipeBook
     }
     
     /**
-     * The printRecipeDetails method, 
+     * The findByExactTitle method, 
      */ 
+    public Recipe findByExactTitle(String title) {
+        for (Recipe r : recipes) {
+            if (r.getTitle().equalsIgnoreCase(title)) {
+                return r;
+            }
+        }
+        return null;
+    }
+    
     public void printRecipeDetails(String title) {
         Recipe r = findByExactTitle(title);
-        // the condition, but I have to commit first :)
+        // We need a case to handle the case where the Recipe isn't found
+        if (r == null) {
+            System.out.println("Recipe not found.");
+            return;
+        }
+        
+        System.out.println("=== " + r.getTitle() + " ===");
+        System.out.println("Servings: " + r.getServings());
+        System.out.println("Difficulty: " + r.getDifficulty());
+        System.out.println("Rating: " + r.getRating());
+        System.out.println("\nIngredient:");
+        for (Ingredient ing : r.getIngredients()) {
+            System.out.println("* " + ing);
+        }
+        
+        System.out.println("\nSteps:");
+        int num = 1;
+        for (Step s : r.getSteps()) {
+            System.out.println(num + ". " + s.getDescription());
+            num++;
+        }
+        System.out.println("\nTags:");
+        for (Tag t : r.getTags()) {
+            System.out.println("- " + t);
+        }
     }
 }
