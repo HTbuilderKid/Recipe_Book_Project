@@ -160,7 +160,7 @@ public class RecipeBook
         return false;
     }
     
-<<<<<<< Updated upstream
+
     public ArrayList<Recipe> listTopRated() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -169,7 +169,5 @@ public class RecipeBook
             }
         }
     }
-=======
-    
->>>>>>> Stashed changes
+
 }

@@ -2,6 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
 
 /**
  * The test class RecipeBookTest.
@@ -52,6 +53,17 @@ public class RecipeBookTest
     {
         RecipeBook recipeBo1 = new RecipeBook("Mohammad", "Willy Wonders");
         recipeBo1.listAllRecipes();
+    }
+    
+    @Test
+    public void testSearchByTitle(){
+        RecipeBook book = new RecipeBook("The Cook Book", "Luffy");
+        RecipeAdder adder = new RecipeAdder(book);
+        adder.addNewRecipe("Pesto Pasta", 2);
+        
+        ArrayList<Recipe> results = book.searchByTitle("pasta");
+        assertEquals(1, results.size());
+        assertEquals("Pesto Pasta", results.get(0).getTitle());
     }
 }
 

@@ -82,19 +82,18 @@ public abstract class Recipe
     }
     
     public boolean hasTag(Tag tag){
-        return false;
+        return tags.contains(tag);
     }
     
-    public boolean hasIngredient(String ingredient){
-        int i = 0;
-        while(i > ingredients.size()){
-            if(ingredients.equals(ingredient)){
-                i++;
+    public boolean hasIngredient(String ingredientName){
+        for(Ingredient i : ingredients){
+            if(i.getName().equalsIgnoreCase(ingredientName)){
                 return true;
             }
         }
         return false;
     }
+    
     public ArrayList<Rating> getRating(){
         return ratings;
     }
