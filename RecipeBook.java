@@ -163,7 +163,7 @@ public class RecipeBook
     public ArrayList<Recipe> listTopRated() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
-            if (r.getRating().getStars() == 5) {
+            if (r.getStars() == 5) {
                 results.add(r);
             }
         }
