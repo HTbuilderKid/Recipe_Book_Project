@@ -14,6 +14,7 @@ public abstract class Recipe
     protected ArrayList<Rating> ratings;
     protected ArrayList<Step> steps;
     protected HashSet<Tag> tags;
+    protected Difficulty difficulty;
     
     /**
      * Constructor for objects of class Recipes
@@ -28,54 +29,102 @@ public abstract class Recipe
         this.ratings = new ArrayList<>();
     }
     
+    /**
+     * The getTitle method
+     */
     public String getTitle() {
         return title;
     }
     
+    /**
+     * The getServings method
+     */
     public double getServings() {
         return servings;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * The addIngredient method
      */
     public void addIngredient(Ingredient ingredient){
         ingredients.add(ingredient);
     }
     
+    
+    /**
+     * The getIngredients method
+     */
     public ArrayList<Ingredient> getIngredients(){
         return ingredients;
     }
+    
+    /**
+     * The addStep method
+     */
     public void addStep(Step step){
         steps.add(step);
     }
+    
+    
+    /**
+     * The getSteps method
+     */
     public ArrayList<Step> getSteps(){
         return steps;
     }
     
+    
+    /**
+     * The addRating method
+     */
     public void addRating (Rating rating){
         ratings.add(rating);
     }
     
-    public ArrayList<Rating> getRatings(){
+    public ArrayList<Rating> getRating(){
         return ratings;
     }
     
+    
+    /**
+     * The addTag method
+     */
     public void addTag(Tag tag){
         tags.add(tag);
     }
     
+    
+    /**
+     * The getTag method
+     */
+    public HashSet<Tag> getTag(){
+        return tags;
+    }
+    
+    
+    /**
+     * The getDifficulty method
+     */
+    public Difficulty getDifficulty(){
+        return difficulty;
+    }
+    
+    
+    /**
+     * The scale method
+     */
     public void scale(double newServings){
         double factor = newServings/servings;
         for(Ingredient i : ingredients){
-            //i.scale(factor); (ingredients method doesn't have scale yet)
+            i.scale(factor); 
         }
         servings = newServings;
     }
     
+    
+    /**
+     * The printDetails method
+     */
     public void printDetails(){
         System.out.println("=== Recipe ===");
         System.out.println("Title: " + title);
@@ -85,4 +134,6 @@ public abstract class Recipe
         System.out.println("Ratings: " + ratings);
         System.out.println("Tag: " + tags);
     }
+    
+    
 }

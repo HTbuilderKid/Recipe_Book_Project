@@ -1,4 +1,16 @@
 #BlueJ class context
 comment0.target=Ingredient
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeForHot\ here.\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment1.params=name\ amount\ unit
+comment1.target=Ingredient(java.lang.String,\ double,\ Unit)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=double\ getAmount()
+comment4.params=
+comment4.target=Unit\ getUnit()
+comment5.params=factor
+comment5.target=void\ scale(double)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

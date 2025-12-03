@@ -10,7 +10,7 @@ public class RecipeHot extends Recipe
     /**
      * Constructor for objects of class RecipeForCold
      */
-    public RecipeHot(String title, int servings)
+    public RecipeHot(String title, double servings)
     {
         super(title, servings);
     }
