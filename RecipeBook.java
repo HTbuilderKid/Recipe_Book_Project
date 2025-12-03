@@ -150,4 +150,22 @@ public class RecipeBook
             System.out.println("- " + t);
         }
     }
+    
+    public boolean rateRecipe(String title, int stars) {
+        Recipe r = findByExactTitle(title);
+        if (r != null) {
+            r.setRating(stars);
+            return true;
+        }
+        return false;
+    }
+    
+    public ArrayList<Recipe> listTopRated() {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r.getRating().getStars() == 5) {
+                results.add(r);
+            }
+        }
+    }
 }
