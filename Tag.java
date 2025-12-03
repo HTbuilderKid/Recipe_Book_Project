@@ -5,5 +5,5 @@
  * @version (a version number or a date)
  */
 public enum Tag{
-    DESSERT, MAIN_COURSE, SIDE_DISH, APPETIZER, UNKNOWN;
+    VEGAN, VEGETARIAN, MEDITERRANEAN, LOW_CARB, NO_SUGAR, KETO, PALEO;
 }

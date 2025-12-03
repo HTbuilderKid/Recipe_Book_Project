@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * Write a description of class RecipeBook here.
  *
  * @author (Chenyu)
- * @version (a version number or a date)
+ * @version (some good version that does good stuff)
  */
 public class RecipeBook
 {
@@ -124,7 +124,7 @@ public class RecipeBook
     
     public void printRecipeDetails(String title) {
         Recipe r = findByExactTitle(title);
-        // We need a case to handle the case where the Recipe isn't found
+        // We need a way to handle the case where the Recipe isn't found
         if (r == null) {
             System.out.println("Recipe not found.");
             return;

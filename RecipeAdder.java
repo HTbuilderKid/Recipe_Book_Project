@@ -10,14 +10,13 @@ public class RecipeAdder
 {
     // instance variables - replace the example below with your own
     private Scanner scanner;
-    private RecipeBook recipeBook;
 
     /**
      * Constructor for objects of class RecipeAdder
      */
     public RecipeAdder()
     {
-        
+        scanner = new Scanner(System.in);
     }
 
     /**
