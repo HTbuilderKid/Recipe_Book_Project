@@ -42,14 +42,6 @@ public abstract class Recipe
     public double getServings() {
         return servings;
     }
-
-    /**
-     * The addIngredient method
-     */
-    public void addIngredient(Ingredient ingredient){
-        ingredients.add(ingredient);
-    }
-    
     
     /**
      * The getIngredients method
@@ -57,15 +49,7 @@ public abstract class Recipe
     public ArrayList<Ingredient> getIngredients(){
         return ingredients;
     }
-    
-    /**
-     * The addStep method
-     */
-    public void addStep(Step step){
-        steps.add(step);
-    }
-    
-    
+
     /**
      * The getSteps method
      */
@@ -73,13 +57,53 @@ public abstract class Recipe
         return steps;
     }
     
+    public ArrayList<Rating> getRating(){
+        return ratings;
+    }
+    
+    /**
+     * The getTag method
+     */
+    public HashSet<Tag> getTags(){
+        return tags;
+    }
+    
+    /**
+     * The getDifficulty method
+     */
+    public Difficulty getDifficulty(){
+        return difficulty;
+    }
+    
+    /**
+     * The addIngredient method
+     */
+    public void addIngredient(Ingredient ingredient){
+        ingredients.add(ingredient);
+    }
+    
+     /**
+     * The addStep method
+     */
+    public void addStep(Step step){
+        steps.add(step);
+    }
+    
+    /**
+     * The addTag method
+     */
+    public void addTag(Tag tag){
+        tags.add(tag);
+    }
     
     /**
      * The addRating method
      */
-    public void setRating (Rating stars){
+    public void addRating (Rating stars){
         ratings.add(stars);
     }
+    
+    
     
     public boolean hasTag(Tag tag){
         return tags.contains(tag);
@@ -94,34 +118,6 @@ public abstract class Recipe
         return false;
     }
     
-    public ArrayList<Rating> getRating(){
-        return ratings;
-    }
-    
-    
-    /**
-     * The addTag method
-     */
-    public void addTag(Tag tag){
-        tags.add(tag);
-    }
-    
-    
-    /**
-     * The getTag method
-     */
-    public HashSet<Tag> getTags(){
-        return tags;
-    }
-    
-    
-    
-    /**
-     * The getDifficulty method
-     */
-    public Difficulty getDifficulty(){
-        return difficulty;
-    }
     
     
     /**
@@ -143,9 +139,19 @@ public abstract class Recipe
         System.out.println("=== Recipe ===");
         System.out.println("Title: " + title);
         System.out.println("Serving: " + servings);
-        System.out.println("Ingredients: " + ingredients );
-        System.out.println("Steps: " + steps);
+        System.out.println("Dfficulty: " + difficulty);
+        System.out.println("Ingredients: ");
+        for(Ingredient i : ingredients){
+            System.out.println("*" + i);
+        }
+        System.out.println("Steps: ");
+        for(Step s : steps){
+            System.out.println("- " + s.toString());
+        }
         System.out.println("Ratings: " + ratings);
+        for(Rating r : ratings){
+            System.out.println(r.toString());
+        }
         System.out.println("Tag: " + tags);
     }
     

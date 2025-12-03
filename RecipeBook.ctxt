@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RecipeBook
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeBook\ here.\r\n\r\n\ @author\ (Chenyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeBook\ here.\r\n\r\n\ @author\ (Chenyu)\r\n\ @version\ (some\ good\ version\ that\ does\ good\ stuff)\r\n
 comment1.params=title\ author
 comment1.target=RecipeBook(java.lang.String,\ java.lang.String)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RecipeBook\r\n

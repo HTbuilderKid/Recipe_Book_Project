@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.target=RecipeHot
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeForHot\ here.\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=title\ servings
-comment1.target=RecipeHot(java.lang.String,\ int)
+comment1.params=title\ servings\ cookingTime
+comment1.target=RecipeHot(java.lang.String,\ double,\ int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RecipeForCold\r\n
 comment2.params=
-comment2.target=void\ printDetails()
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment2.target=int\ getCookingTime()
+comment3.params=cookingTime
+comment3.target=void\ setCookingTime(int)
+comment4.params=
+comment4.target=void\ printDetails()
+comment4.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+numComments=5
