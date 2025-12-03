@@ -151,7 +151,7 @@ public class RecipeBook
         }
     }
     
-    public boolean rateRecipe(String title, int stars) {
+    public boolean rateRecipe(String title, Rating stars) {
         Recipe r = findByExactTitle(title);
         if (r != null) {
             r.setRating(stars);
@@ -160,6 +160,7 @@ public class RecipeBook
         return false;
     }
     
+<<<<<<< Updated upstream
     public ArrayList<Recipe> listTopRated() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -168,4 +169,7 @@ public class RecipeBook
             }
         }
     }
+=======
+    
+>>>>>>> Stashed changes
 }

@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.target=Rating
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeForHot\ here.\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=score\ comment
+comment1.params=stars\ comment
 comment1.target=Rating(int,\ java.lang.String)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Rating\r\n
 comment2.params=
-comment2.target=int\ getScore()
+comment2.target=int\ getRating()
 comment3.params=
 comment3.target=java.lang.String\ getComment()
-comment4.params=newScore
+comment4.params=newStar
 comment4.target=void\ changeScore(int)
 comment5.params=
 comment5.target=java.lang.String\ toString()

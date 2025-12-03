@@ -8,34 +8,34 @@
 public class Rating
 {
     // instance variables - replace the example below with your own
-    private int score;
+    private int stars;
     private String comment;
     /**
      * Constructor for objects of class Rating
      */
-    public Rating(int score, String comment)
+    public Rating(int stars, String comment)
     {
-        if(score >= 0 && score <= 5){
-            this.score = score;
+        if(stars >= 0 && stars <= 5){
+            this.stars = stars;
         }
         this.comment = comment;
     }
     
-    public int getScore(){
-        return score;
+    public int getRating(){
+        return stars;
     }
     
     public String getComment(){
         return comment;
     }
     
-    public void changeScore(int newScore){
-        if(newScore >= 0 && newScore <= 5){
-            this.score = newScore;
+    public void changeScore(int newStar){
+        if(newStar >= 0 && newStar <= 5){
+            this.stars = newStar;
         }
     }
 
     public String toString(){
-        return score + "/5 " + comment;
+        return stars + "/5 " + comment;
     }
 }

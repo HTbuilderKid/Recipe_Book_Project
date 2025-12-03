@@ -20,13 +20,15 @@ public class Step
         this.description = description;
     }
 
-    public int number(){
+    public int getNumber(){
         return number;
     }
     
-    public String description(){
+    public String getDescription(){
         return description;
     }
+    
+    
     
     public String toString(){
         return number + ". " + description;

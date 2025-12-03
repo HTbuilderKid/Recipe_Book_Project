@@ -77,10 +77,24 @@ public abstract class Recipe
     /**
      * The addRating method
      */
-    public void addRating (Rating rating){
-        ratings.add(rating);
+    public void setRating (Rating stars){
+        ratings.add(stars);
     }
     
+    public boolean hasTag(Tag tag){
+        return false;
+    }
+    
+    public boolean hasIngredient(String ingredient){
+        int i = 0;
+        while(i > ingredients.size()){
+            if(ingredients.equals(ingredient)){
+                i++;
+                return true;
+            }
+        }
+        return false;
+    }
     public ArrayList<Rating> getRating(){
         return ratings;
     }
@@ -97,9 +111,10 @@ public abstract class Recipe
     /**
      * The getTag method
      */
-    public HashSet<Tag> getTag(){
+    public HashSet<Tag> getTags(){
         return tags;
     }
+    
     
     
     /**
