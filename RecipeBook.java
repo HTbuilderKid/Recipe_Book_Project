@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-//import java.util.Collections;
+
 /**
  * Write a description of class RecipeBook here.
  *
@@ -33,6 +32,10 @@ public class RecipeBook
         System.out.println("Total Recipes: " + recipes.size());
     }
     
+    public void addRecipe(Recipe r) {
+        recipes.add(r);
+    }
+    
     /**
      * The listAllRecipes method, 
      */
@@ -45,6 +48,26 @@ public class RecipeBook
         for (Recipe r : recipes) {
             System.out.println("- " + r.getTitle());
         }
+    }
+    
+    public ArrayList<Recipe> listHotRecipes() {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r instanceof RecipeHot) {  // we can use the "instanceof" keyword to determine whether r is a specific instannce of the RecipeHot class
+                results.add(r); 
+            }
+        }
+        return results;
+    }
+    
+    public ArrayList<Recipe> listColdRecipes() {
+        ArrayList<Recipe> results = new ArrayList<>();
+        for (Recipe r : recipes) {
+            if (r instanceof RecipeCold) {
+                results.add(r);
+            }
+        }
+        return results;
     }
     
     /**
