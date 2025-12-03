@@ -111,10 +111,14 @@ public class RecipeBook
     }
     
     /**
-     * The printRecipeDetails method, 
+     * The findByExactTitle method, 
      */ 
-    public void printRecipeDetails(String title) {
-        Recipe r = findByExactTitle(title);
-        // the condition, but I have to commit first :)
+    public Recipe findByExactTitle(String title) {
+        for (Recipe r : recipes) {
+            if (r.getTitle().equalsIgnoreCase(title)) {
+                return r;
+            }
+        }
+        return null;
     }
 }
