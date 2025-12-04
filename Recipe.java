@@ -14,9 +14,7 @@ public abstract class Recipe
     protected ArrayList<Rating> ratings;
     protected ArrayList<Step> steps;
     protected HashSet<Tag> tags;
-    //protected Difficulty difficulty; We need to remove this since the 
-    // dish's difficulty should be devired based on the steps, not set by the 
-    // user. If we keep this, adding/removing steps would make it inconsistent :)
+    
     
     /**
      * Constructor for objects of class Recipes
