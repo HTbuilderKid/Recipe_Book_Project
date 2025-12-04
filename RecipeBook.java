@@ -21,7 +21,7 @@ public class RecipeBook
         this.author = author;
         this.recipes = new ArrayList<>();
     }
-    
+
     /**
      * The printBookDetails method, 
      */
@@ -31,11 +31,11 @@ public class RecipeBook
         System.out.println("Author: " + author);
         System.out.println("Total Recipes: " + recipes.size());
     }
-    
+
     public void addRecipe(Recipe r) {
         recipes.add(r);
     }
-    
+
     /**
      * The listAllRecipes method, 
      */
@@ -44,12 +44,12 @@ public class RecipeBook
             System.out.println("No recipes in the book.");
             return;
         }
-        
+
         for (Recipe r : recipes) {
             System.out.println("- " + r.getTitle());
         }
     }
-    
+
     public ArrayList<Recipe> listHotRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -59,7 +59,7 @@ public class RecipeBook
         }
         return results;
     }
-    
+
     public ArrayList<Recipe> listColdRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -69,7 +69,7 @@ public class RecipeBook
         }
         return results;
     }
-    
+
     /**
      * The searchByTitle method, 
      */
@@ -82,7 +82,7 @@ public class RecipeBook
         }
         return results;
     }
-        
+
     /**
      * The searchByIngredient method, which uses the hasIngredient method of the
      * Recipe class (not-yet written).
@@ -96,7 +96,7 @@ public class RecipeBook
         }
         return results;
     }
-    
+
     /**
      * The searchByTitle method, 
      */
@@ -109,7 +109,7 @@ public class RecipeBook
         }
         return results;
     }
-    
+
     /**
      * The findByExactTitle method, 
      */ 
@@ -121,7 +121,7 @@ public class RecipeBook
         }
         return null;
     }
-    
+
     public void printRecipeDetails(String title) {
         Recipe r = findByExactTitle(title);
         // We need a way to handle the case where the Recipe isn't found
@@ -129,7 +129,7 @@ public class RecipeBook
             System.out.println("Recipe not found.");
             return;
         }
-        
+
         System.out.println("=== " + r.getTitle() + " ===");
         System.out.println("Servings: " + r.getServings());
         System.out.println("Difficulty: " + r.getDifficulty());
@@ -138,7 +138,7 @@ public class RecipeBook
         for (Ingredient ing : r.getIngredients()) {
             System.out.println("* " + ing);
         }
-        
+
         System.out.println("\nSteps:");
         int num = 1;
         for (Step s : r.getSteps()) {
@@ -150,7 +150,7 @@ public class RecipeBook
             System.out.println("- " + t);
         }
     }
-    
+
     public boolean rateRecipe(String title, Rating stars) {
         Recipe r = findByExactTitle(title);
         if (r != null) {
@@ -159,15 +159,15 @@ public class RecipeBook
         }
         return false;
     }
-    
 
     public ArrayList<Recipe> listTopRated() {
-       ArrayList<Recipe> results = new ArrayList<>();
+        ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
             if (r.getStars() == 5) {
                 results.add(r);
             }
         }
+        return results;
     }
 
 }

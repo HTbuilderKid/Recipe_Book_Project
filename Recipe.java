@@ -75,6 +75,16 @@ public abstract class Recipe
         return difficulty;
     }
     
+    public int getStars(){
+        int max = 0;
+        for(Rating r : ratings){
+            if(r.getRating() > max){
+                max = r.getRating();
+            }
+        }
+        return max;
+    }
+    
     /**
      * The addIngredient method
      */
@@ -111,7 +121,7 @@ public abstract class Recipe
     
     public boolean hasIngredient(String ingredientName){
         for(Ingredient i : ingredients){
-            if(i.getName().equalsIgnoreCase(ingredientName)){
+            if(i.getName().toLowerCase().contains(ingredientName.toLowerCase())){
                 return true;
             }
         }

@@ -34,6 +34,7 @@ public class Rating
             this.stars = newStar;
         }
     }
+    
 
     public String toString(){
         return stars + "/5 " + comment;
