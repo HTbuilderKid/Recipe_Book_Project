@@ -7,7 +7,7 @@ import java.util.HashSet;
 /**
  * The test class RecipeHotTest.
  *
- * @author  (your name)
+ * @author  (Chenyu)
  * @version (a version number or a date)
  */
 public class RecipeHotTest
