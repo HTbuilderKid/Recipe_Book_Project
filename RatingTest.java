@@ -1,5 +1,3 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,32 +9,30 @@ import org.junit.jupiter.api.Test;
  * @author  (Chenyu)
  * @version (a version number or a date)
  */
-public class RatingTest
-{
-    /**
-     * Default constructor for test class RatingTest
-     */
-    public RatingTest()
-    {
+public class RatingTest {
+    @Test
+    public void testConstructorAndGetters() {
+        Rating r = new Rating(4, "Good");
+        assertEquals(4, r.getRating());
+        assertEquals("Good", r.getComment());
     }
 
-    /**
-     * Sets up the test fixture.
-     *
-     * Called before every test case method.
-     */
-    @BeforeEach
-    public void setUp()
-    {
+    @Test
+    public void testChangeScore() {
+        Rating r = new Rating(3, "Okay");
+        r.changeScore(5);
+        assertEquals(5, r.getRating());
+
+        r.changeScore(-1); // you -1 me? My basement shall be your doom! AHAHAHHA!
+        assertEquals(5, r.getRating());
+
+        r.changeScore(6); // since this is invalid also invalid, it should be ignored
+        assertEquals(5, r.getRating());
     }
 
-    /**
-     * Tears down the test fixture.
-     *
-     * Called after every test case method.
-     */
-    @AfterEach
-    public void tearDown()
-    {
+    @Test
+    public void testToString() {
+        Rating r = new Rating(4, "Tasty");
+        assertEquals("4/5 Tasty", r.toString());
     }
 }
