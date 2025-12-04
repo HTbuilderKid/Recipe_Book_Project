@@ -158,6 +158,4 @@ public abstract class Recipe
         }
         System.out.println("Tag: " + tags);
     }
-    
-    
 }
