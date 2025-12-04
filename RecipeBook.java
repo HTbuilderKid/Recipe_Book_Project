@@ -129,26 +129,9 @@ public class RecipeBook
             System.out.println("Recipe not found.");
             return;
         }
-        
-        System.out.println("=== " + r.getTitle() + " ===");
-        System.out.println("Servings: " + r.getServings());
-        System.out.println("Difficulty: " + r.getDifficulty());
-        System.out.println("Rating: " + r.getRating());
-        System.out.println("\nIngredient:");
-        for (Ingredient ing : r.getIngredients()) {
-            System.out.println("* " + ing);
-        }
-        
-        System.out.println("\nSteps:");
-        int num = 1;
-        for (Step s : r.getSteps()) {
-            System.out.println(num + ". " + s.getDescription());
-            num++;
-        }
-        System.out.println("\nTags:");
-        for (Tag t : r.getTags()) {
-            System.out.println("- " + t);
-        }
+        // Since we want to keep everything loosely coupled, having a method that
+        // is basically a copy of the printDetails in Recipe feels kinda redundant
+        r.printDetails();
     }
     
     public boolean rateRecipe(String title, Rating stars) {
@@ -159,15 +142,17 @@ public class RecipeBook
         }
         return false;
     }
-    
 
     public ArrayList<Recipe> listTopRated() {
        ArrayList<Recipe> results = new ArrayList<>();
-        for (Recipe r : recipes) {
-            if (r.getStars() == 5) {
-                results.add(r);
-            }
-        }
+       for (Recipe r : recipes) {
+           for (Rating rate : r.getRating()) {
+               if (rate.getRating() == 5) {
+                   results.add(r);
+                   break;
+               }
+           }
+       }
+       return results;
     }
-
 }

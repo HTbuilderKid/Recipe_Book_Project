@@ -35,6 +35,6 @@ public class Ingredient
     }
     
     public String toString(){
-        return amount + " " + unit + "S of " + name;
+        return amount + " " + unit + " of " + name;
     }
 }
