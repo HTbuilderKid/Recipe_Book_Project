@@ -16,6 +16,15 @@ public class RecipeCold extends Recipe
         super(title, servings);
         this.chillTime = chillTime;
     }
+    
+    /**
+     * A second constructor which doesn't ask the user to input a cooking time unless they know it
+     */
+    public RecipeCold(String title, double servings)
+    {
+        super(title, servings);
+        this.chillTime = 0; // we can set a default value instead of letting the user put the time (this just helps improve RecipeAdder)
+    }
 
     public int getChillTime(){
         return chillTime;

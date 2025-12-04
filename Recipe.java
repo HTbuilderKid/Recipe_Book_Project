@@ -14,7 +14,9 @@ public abstract class Recipe
     protected ArrayList<Rating> ratings;
     protected ArrayList<Step> steps;
     protected HashSet<Tag> tags;
-    protected Difficulty difficulty;
+    //protected Difficulty difficulty; We need to remove this since the 
+    // dish's difficulty should be devired based on the steps, not set by the 
+    // user. If we keep this, adding/removing steps would make it inconsistent :)
     
     /**
      * Constructor for objects of class Recipes
@@ -72,7 +74,14 @@ public abstract class Recipe
      * The getDifficulty method
      */
     public Difficulty getDifficulty(){
-        return difficulty;
+        int stepCount = steps.size();
+        if (stepCount < 5) {
+            return Difficulty.EASY;
+        } else if (stepCount <= 10) {
+            return Difficulty.MEDIUM;
+        } else {
+            return Difficulty.HARD;
+        }
     }
     
     public int getStars(){
@@ -113,8 +122,6 @@ public abstract class Recipe
         ratings.add(stars);
     }
     
-    
-    
     public boolean hasTag(Tag tag){
         return tags.contains(tag);
     }
@@ -128,8 +135,6 @@ public abstract class Recipe
         return false;
     }
     
-    
-    
     /**
      * The scale method
      */
@@ -141,7 +146,6 @@ public abstract class Recipe
         servings = newServings;
     }
     
-    
     /**
      * The printDetails method
      */
@@ -149,7 +153,7 @@ public abstract class Recipe
         System.out.println("=== Recipe ===");
         System.out.println("Title: " + title);
         System.out.println("Serving: " + servings);
-        System.out.println("Dfficulty: " + difficulty);
+        System.out.println("Dfficulty: " + getDifficulty());
         System.out.println("Ingredients: ");
         for(Ingredient i : ingredients){
             System.out.println("*" + i);
@@ -164,6 +168,4 @@ public abstract class Recipe
         }
         System.out.println("Tag: " + tags);
     }
-    
-    
 }

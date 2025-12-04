@@ -16,6 +16,15 @@ public class RecipeHot extends Recipe
         super(title, servings);
         this.cookingTime = cookingTime;
     }
+    
+    /**
+     * A second constructor which doesn't ask the user to input a cooking time unless they know it
+     */
+    public RecipeHot(String title, double servings)
+    {
+        super(title, servings);
+        this.cookingTime = 0;
+    }
 
     public int getCookingTime(){
         return cookingTime;
