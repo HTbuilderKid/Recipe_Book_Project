@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
+
 /**
  * Write a description of class RecipeForHot here.
  *
@@ -120,10 +122,18 @@ public abstract class Recipe
         ratings.add(stars);
     }
     
+    
+    /**
+     * The addRating method
+     */
     public boolean hasTag(Tag tag){
         return tags.contains(tag);
     }
     
+    
+    /**
+     * The hasIngredient method
+     */
     public boolean hasIngredient(String ingredientName){
         for(Ingredient i : ingredients){
             if(i.getName().toLowerCase().contains(ingredientName.toLowerCase())){
@@ -148,22 +158,36 @@ public abstract class Recipe
      * The printDetails method
      */
     public void printDetails(){
-        System.out.println("=== Recipe ===");
         System.out.println("Title: " + title);
         System.out.println("Serving: " + servings);
+        System.out.println("Tag: " + tags);
         System.out.println("Dfficulty: " + getDifficulty());
-        System.out.println("Ingredients: ");
+        System.out.println("\nIngredients: ");
         for(Ingredient i : ingredients){
-            System.out.println("*" + i);
+            System.out.println("-" + i);
         }
-        System.out.println("Steps: ");
+        System.out.println("\nSteps: ");
         for(Step s : steps){
             System.out.println("- " + s.toString());
         }
-        System.out.println("Ratings: " + ratings);
+        System.out.println("\nRatings: ");
         for(Rating r : ratings){
-            System.out.println(r.toString());
+            System.out.println("- " + r.toString());
         }
-        System.out.println("Tag: " + tags);
+        
     }
+    
+    public boolean removeIngredient(String ingredientName){
+        Iterator<Ingredient> it = ingredients.iterator();
+        while(it.hasNext()){
+            Ingredient ing = it.next();
+            if(ing.getName().equalsIgnoreCase(ingredientName)){
+                it.remove();
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
 }
