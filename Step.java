@@ -28,7 +28,6 @@ public class Step
         return description;
     }
     
-    
     public String toString(){
         return number + ". " + description;
     }
