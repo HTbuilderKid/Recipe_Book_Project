@@ -23,7 +23,7 @@ public class RecipeColdTest {
     @Test
     public void testScaleServings() {
         RecipeCold recipe = new RecipeCold("Cold", 2);
-        Ingredient ing = new Ingredient("Cold", 5, Unit.GRAMME);
+        Ingredient ing = new Ingredient("Cold", 5, Unit.G);
         recipe.addIngredient(ing);
         recipe.scale(4);
         assertEquals(4, recipe.getServings());

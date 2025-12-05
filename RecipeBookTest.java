@@ -100,10 +100,10 @@ public class RecipeBookTest
         RecipeHot hot = new RecipeHot("Pesto Pasta", 4, 20);
         RecipeCold cold = new RecipeCold("Chocolate Cake", 3, 120);
         
-        hot.addIngredient(new Ingredient("Milk", 250, Unit.MILLILITER));
+        hot.addIngredient(new Ingredient("Milk", 250, Unit.ML));
         hot.addIngredient(new Ingredient("Flour", 2, Unit.CUP));
-        cold.addIngredient(new Ingredient("Chocolate milk", 200, Unit.MILLILITER));
-        cold.addIngredient(new Ingredient("Cacoa", 2, Unit.TEASPOON));
+        cold.addIngredient(new Ingredient("Chocolate milk", 200, Unit.ML));
+        cold.addIngredient(new Ingredient("Cacoa", 2, Unit.TSP));
         
         book.addRecipe(hot);
         book.addRecipe(cold);

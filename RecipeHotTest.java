@@ -33,7 +33,7 @@ public class RecipeHotTest
     @Test
     public void testAddIngredientAndStepAndRatingBecauseIAmTooLazyToWriteSeparateTestsForEachOne() {
         RecipeHot recipe = new RecipeHot("Steve's Lava Chicken!!!", 4, 30);
-        Ingredient ingredient = new Ingredient("Lava", 2, Unit.TEASPOON);
+        Ingredient ingredient = new Ingredient("Lava", 2, Unit.TSP);
         recipe.addIngredient(ingredient);
         assertTrue(recipe.getIngredients().contains(ingredient));
         assertTrue(recipe.hasIngredient("Lava"));
