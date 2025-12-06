@@ -98,6 +98,12 @@ public abstract class Recipe
      * The addIngredient method
      */
     public void addIngredient(Ingredient ingredient){
+        for(Ingredient i : ingredients){
+            if(i.getName().equalsIgnoreCase(ingredient.getName())){
+                System.out.println("Ingredient already exists: " + ingredient.getName());
+                return;
+            }
+        }
         ingredients.add(ingredient);
     }
     
@@ -105,6 +111,12 @@ public abstract class Recipe
      * The addStep method
      */
     public void addStep(Step step){
+        for(Step s : steps){
+            if(s.getNumber() == step.getNumber()){
+                System.out.println("Step " + step.getNumber() + " already exists.");
+                return;
+            }
+        }
         steps.add(step);
     }
     
