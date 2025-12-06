@@ -32,8 +32,25 @@ public class RecipeBook
         System.out.println("Total Recipes: " + recipes.size());
     }
 
-    public void addRecipe(Recipe r) {
+    public boolean addRecipe(Recipe r) {
+        for(Recipe exists : recipes){
+            if(exists.getTitle().equalsIgnoreCase(r.getTitle())){
+               System.out.println("Recipe already exists: " + r.getTitle());
+               return false;
+            }
+        }
         recipes.add(r);
+        return true;
+    }
+    
+    public boolean removeRecipe(String title){
+        for(int i = 0; i < recipes.size(); i++){
+            if(recipes.get(i).getTitle().equalsIgnoreCase(title)){
+                recipes.remove(i);
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
