@@ -210,7 +210,7 @@ public class RecipeBookTest
     @Test
     public void testPrintBookDetails()
     {
-        RecipeAdder recipeAd1 = new RecipeAdder();
+        //RecipeAdder recipeAd1 = new RecipeAdder();
         RecipeBook recipeBo1 = new RecipeBook("Avocado", "Mo Camole");
         recipeBo1.printBookDetails();
     }

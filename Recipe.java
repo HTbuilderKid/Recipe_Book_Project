@@ -189,5 +189,37 @@ public abstract class Recipe
         return false;
     }
     
+    public boolean removeStep(int stepNumber){
+        Iterator<Step> it = steps.iterator();
+        while(it.hasNext()){
+            Step s = it.next();
+            if(s.getNumber() == stepNumber){
+                it.remove();
+                renumberStep();
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    private void renumberStep(){
+        int num = 1;
+        for(Step s : steps){
+           s.setNumber(num);
+           num++;
+        }
+    }
+    
+    public boolean removeRating(int index){
+        int i = 0;
+        while(i < ratings.size()){
+            if(i == index){
+                ratings.remove(i);
+                return true;
+            }
+            i++;
+        }
+        return false;
+    }
     
 }

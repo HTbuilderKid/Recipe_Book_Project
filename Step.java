@@ -10,7 +10,7 @@ public class Step
     // instance variables - replace the example below with your own
     private int number;
     private String description;
-
+    
     /**
      * Constructor for objects of class Step
      */
@@ -18,6 +18,10 @@ public class Step
     {
         this.number = number;
         this.description = description;
+    }
+    
+    public void setNumber(int number){
+        this.number = number;
     }
 
     public int getNumber(){
