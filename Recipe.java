@@ -59,6 +59,9 @@ public abstract class Recipe
         return steps;
     }
     
+    /**
+     * The getRating method 
+     */
     public ArrayList<Rating> getRating(){
         return ratings;
     }
@@ -84,6 +87,9 @@ public abstract class Recipe
         }
     }
     
+    /**
+     * The getStars method 
+     */
     public int getStars(){
         int max = 0;
         for(Rating r : ratings){
@@ -189,6 +195,9 @@ public abstract class Recipe
         
     }
     
+    /**
+     * The removeIngredient method 
+     */
     public boolean removeIngredient(String ingredientName){
         Iterator<Ingredient> it = ingredients.iterator();
         while(it.hasNext()){
@@ -201,6 +210,9 @@ public abstract class Recipe
         return false;
     }
     
+    /**
+     * The removeStep method 
+     */
     public boolean removeStep(int stepNumber){
         Iterator<Step> it = steps.iterator();
         while(it.hasNext()){
@@ -214,6 +226,9 @@ public abstract class Recipe
         return false;
     }
     
+    /**
+     * The renumberStep method 
+     */
     private void renumberStep(){
         int num = 1;
         for(Step s : steps){
@@ -222,6 +237,9 @@ public abstract class Recipe
         }
     }
     
+    /**
+     * The removeRating method
+     */
     public boolean removeRating(int index){
         int i = 0;
         while(i < ratings.size()){

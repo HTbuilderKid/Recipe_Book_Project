@@ -22,6 +22,7 @@ comment4.params=
 comment4.target=void\ testAddRecipe()
 comment5.params=
 comment5.target=void\ testListHotRecipes()
+comment5.text=\r\n\ I\ didn't\ do\ listColdRecipes\ because\ it\ is\ the\ same\ thing\ as\ this\ one\r\n
 comment6.params=
 comment6.target=void\ testSearchByTitle()
 comment7.params=

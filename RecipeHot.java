@@ -26,18 +26,21 @@ public class RecipeHot extends Recipe
         this.cookingTime = 0;
     }
 
+    /**
+     * The getCookingTime method 
+     */
     public int getCookingTime(){
         return cookingTime;
     }
     
+    /**
+     * The setCookingTime method, 
+     */
     public void setCookingTime(int cookingTime){
         this.cookingTime = cookingTime;
     }
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * The printDetails method
      */
     @Override
     public void printDetails()

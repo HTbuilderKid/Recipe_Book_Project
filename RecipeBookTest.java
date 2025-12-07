@@ -53,6 +53,9 @@ public class RecipeBookTest
 
     }
     
+    /**
+     * I didn't do listColdRecipes because it is the same thing as this one
+     */
     @Test
     public void testListHotRecipes(){
         RecipeBook book = new RecipeBook("Stranger Things", "Duffer Bros");
@@ -177,7 +180,6 @@ public class RecipeBookTest
     }
     
     @Test
-    
     public void testListTopRated(){
         RecipeBook book = new RecipeBook("Ananas", "SpongeBob");
         
@@ -198,19 +200,9 @@ public class RecipeBookTest
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @Test
     public void testPrintBookDetails()
     {
-        //RecipeAdder recipeAd1 = new RecipeAdder();
         RecipeBook recipeBo1 = new RecipeBook("Avocado", "Mo Camole");
         recipeBo1.printBookDetails();
     }

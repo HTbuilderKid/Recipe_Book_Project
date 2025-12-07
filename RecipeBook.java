@@ -23,7 +23,7 @@ public class RecipeBook
     }
 
     /**
-     * The printBookDetails method, 
+     * The printBookDetails method
      */
     public void printBookDetails() {
         System.out.println("=✯= Recipe Book =✯=");
@@ -32,6 +32,9 @@ public class RecipeBook
         System.out.println("Total Recipes: " + recipes.size());
     }
 
+    /**
+     * The addRecipe method 
+     */
     public boolean addRecipe(Recipe r) {
         for(Recipe exists : recipes){
             if(exists.getTitle().equalsIgnoreCase(r.getTitle())){
@@ -43,6 +46,9 @@ public class RecipeBook
         return true;
     }
     
+    /**
+     * The removeRecipe method 
+     */
     public boolean removeRecipe(String title){
         for(int i = 0; i < recipes.size(); i++){
             if(recipes.get(i).getTitle().equalsIgnoreCase(title)){
@@ -54,7 +60,7 @@ public class RecipeBook
     }
 
     /**
-     * The listAllRecipes method, 
+     * The listAllRecipes method 
      */
     public void listAllRecipes() {
         if (recipes.isEmpty()) {
@@ -67,6 +73,9 @@ public class RecipeBook
         }
     }
 
+    /**
+     * The listHotRecipes method
+     */
     public ArrayList<Recipe> listHotRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -77,6 +86,9 @@ public class RecipeBook
         return results;
     }
 
+    /**
+     * The listColdRecipes method 
+     */
     public ArrayList<Recipe> listColdRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {
@@ -88,7 +100,7 @@ public class RecipeBook
     }
 
     /**
-     * The searchByTitle method, 
+     * The searchByTitle method 
      */
     public ArrayList<Recipe> searchByTitle(String text) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -102,7 +114,6 @@ public class RecipeBook
 
     /**
      * The searchByIngredient method, which uses the hasIngredient method of the
-     * Recipe class (not-yet written).
      */
     public ArrayList<Recipe> searchByIngredient(String ingredientName) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -115,7 +126,7 @@ public class RecipeBook
     }
 
     /**
-     * The searchByTitle method, 
+     * The searchByTitle method 
      */
     public ArrayList<Recipe> searchByTag(Tag tag) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -128,7 +139,7 @@ public class RecipeBook
     }
 
     /**
-     * The findByExactTitle method, 
+     * The findByExactTitle method
      */ 
     public Recipe findByExactTitle(String title) {
         for (Recipe r : recipes) {
@@ -139,6 +150,9 @@ public class RecipeBook
         return null;
     }
 
+    /**
+     * The printRecipeDetails method 
+     */
     public void printRecipeDetails(String title) {
         Recipe r = findByExactTitle(title);
         // We need a way to handle the case where the Recipe isn't found
@@ -168,6 +182,10 @@ public class RecipeBook
         }
     }
 
+    
+    /**
+     * The rateRecipe method 
+     */
     public boolean rateRecipe(String title, Rating stars) {
         Recipe r = findByExactTitle(title);
         if (r != null) {
@@ -177,6 +195,9 @@ public class RecipeBook
         return false;
     }
 
+    /**
+     * The listTopRated method 
+     */
     public ArrayList<Recipe> listTopRated() {
         ArrayList<Recipe> results = new ArrayList<>();
         for (Recipe r : recipes) {

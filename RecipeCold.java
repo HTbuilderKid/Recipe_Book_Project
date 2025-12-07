@@ -8,6 +8,7 @@
 public class RecipeCold extends Recipe
 {
     private int chillTime;
+    
     /**
      * Constructor for objects of class RecipeForCold
      */
@@ -26,18 +27,22 @@ public class RecipeCold extends Recipe
         this.chillTime = 0; // we can set a default value instead of letting the user put the time (this just helps improve RecipeAdder)
     }
 
+    /**
+     * The getChillTime method
+     */
     public int getChillTime(){
         return chillTime;
     }
     
+    /**
+     * The setCookingTime method
+     */
     public void setCookingTime(int chillTime){
         this.chillTime = chillTime;
     }
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * The printDetails()
      */
     @Override
     public void printDetails()

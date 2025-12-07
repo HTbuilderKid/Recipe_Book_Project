@@ -7,9 +7,9 @@
  */
 public class Rating
 {
-    // instance variables - replace the example below with your own
     private int stars;
     private String comment;
+    
     /**
      * Constructor for objects of class Rating
      */
@@ -21,21 +21,32 @@ public class Rating
         this.comment = comment;
     }
     
+    /**
+     * The getRating method, 
+     */
     public int getRating(){
         return stars;
     }
     
+    /**
+     * The getComment method, 
+     */
     public String getComment(){
         return comment;
     }
     
+    /**
+     * The changeScore method, 
+     */
     public void changeScore(int newStar){
         if(newStar >= 0 && newStar <= 5){
             this.stars = newStar;
         }
     }
     
-
+    /**
+     * The toString method, 
+     */
     public String toString(){
         return stars + "/5 " + comment;
     }
