@@ -41,7 +41,7 @@ public class RecipeHotTest
         Step step = new Step(1, "Boil lava");
         recipe.addStep(step);
         assertTrue(recipe.getSteps().contains(step));
-        // Gimmmeee the monnnniiii
+        // Banana split
         Rating rating = new Rating(5, "Bussin like Hell Yeah!");
         recipe.addRating(rating);
         assertTrue(recipe.getRating().contains(rating));
