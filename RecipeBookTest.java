@@ -200,6 +200,24 @@ public class RecipeBookTest
         
     }
     
+    public void testRemoveRecipe(){
+        RecipeBook book = new RecipeBook("Ananas", "SpongeBob");
+        
+        RecipeHot hot = new RecipeHot("Noodles", 4, 20);
+        RecipeCold cold = new RecipeCold("Octopus", 3, 120);
+        
+        book.addRecipe(hot);
+        book.addRecipe(cold);
+        
+        //Remove existing recipe
+        boolean remove1 = book.removeRecipe("noodles");
+        assertTrue(remove1);
+        
+        boolean remove2 = book.removeRecipe("Gaston");
+        assertFalse(remove2);
+        
+    }
+    
     @Test
     public void testPrintBookDetails()
     {
