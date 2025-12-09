@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RecipeColdTest
-comment0.text=\r\n\ The\ test\ class\ RecipeColdTest.\r\n\ \r\n\ Test\ include\:\r\n\ -\ COnstructor\ and\ getters\ for\ title,\ servings\ and\ chill\ time\r\n\ -\ Scaling\ the\ servings\ and\ updating\ ingredient\ amounts\r\n\ -\ Modifying\ the\ chill\ time\ using\ the\ setter\ method\r\n\r\n\ @author\ \ (Chentyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ test\ class\ RecipeColdTest.\r\n\ Test\ include\:\r\n\ -\ COnstructor\ and\ getters\ for\ title,\ servings\ and\ chill\ time\r\n\ -\ Scaling\ the\ servings\ and\ updating\ ingredient\ amounts\r\n\ -\ Modifying\ the\ chill\ time\ using\ the\ setter\ method\r\n\r\n\ @author\ \ (Chentyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ testConstructorAndGetters()
 comment2.params=

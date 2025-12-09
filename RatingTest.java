@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 /**
  * The test class RatingTest.
- * 
  * Tests include:
  * - Constrcutor and getter methods for stars and comment
  * - Changing the rating score with  validation(ensures that it remains between 0 and 5)

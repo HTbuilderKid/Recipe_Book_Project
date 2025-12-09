@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashSet;
 
 /**
- * Unit tests for teh RecipeHot class
+ * Unit tests for the RecipeHot class
  *
  * @author  (Chenyu)
  * @version (a version number or a date)
