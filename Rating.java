@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class RecipeForHot here.
+ * Represents a rating for a recipe that includes a star score and a comment
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -11,7 +11,8 @@ public class Rating
     private String comment;
     
     /**
-     * Constructor for objects of class Rating
+     * Creates a rating with a given start and comment
+     * Ensuures that the start is between 0 and 5
      */
     public Rating(int stars, String comment)
     {
@@ -22,21 +23,22 @@ public class Rating
     }
     
     /**
-     * The getRating method, 
+     * Returns the star rating
      */
     public int getRating(){
         return stars;
     }
     
     /**
-     * The getComment method, 
+     * Returns the comment associated with that rating
      */
     public String getComment(){
         return comment;
     }
     
     /**
-     * The changeScore method, 
+     * Changes the star score of the rating
+     * Ensures that it remains between 0 and 5
      */
     public void changeScore(int newStar){
         if(newStar >= 0 && newStar <= 5){

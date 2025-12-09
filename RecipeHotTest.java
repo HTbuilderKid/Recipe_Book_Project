@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashSet;
 
 /**
- * The test class RecipeHotTest.
+ * Unit tests for teh RecipeHot class
  *
  * @author  (Chenyu)
  * @version (a version number or a date)
@@ -29,7 +29,10 @@ public class RecipeHotTest
         assertEquals(0, recipe.getRating().size());
         assertEquals(0, recipe.getTags().size());
     }
-    
+
+    /**
+     * Tests adding ingredients, steps, and ratings to a RecipeHot
+     */
     @Test
     public void testAddIngredientAndStepAndRatingBecauseIAmTooLazyToWriteSeparateTestsForEachOne() {
         RecipeHot recipe = new RecipeHot("Steve's Lava Chicken!!!", 4, 30);
@@ -46,7 +49,10 @@ public class RecipeHotTest
         recipe.addRating(rating);
         assertTrue(recipe.getRating().contains(rating));
     }
-    
+
+    /**
+     * Tests the difficulty logic of RecipeHot based on the number of steps
+     */
     @Test
     public void testDifficultyLogic() {
         RecipeHot recipe = new RecipeHot("Spicy Soup", 4, 30);

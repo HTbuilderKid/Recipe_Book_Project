@@ -5,6 +5,11 @@ import org.junit.jupiter.api.Test;
 
 /**
  * The test class RecipeColdTest.
+ * 
+ * Test include:
+ * - COnstructor and getters for title, servings and chill time
+ * - Scaling the servings and updating ingredient amounts
+ * - Modifying the chill time using the setter method
  *
  * @author  (Chentyu)
  * @version (a version number or a date)

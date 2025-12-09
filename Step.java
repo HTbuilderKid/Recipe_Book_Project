@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class RecipeForHot here.
+ * Represents a single step in a recipe
+ * Each step has a number(its order in the recipe) and a description of what to do
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -12,7 +13,7 @@ public class Step
     private String description;
     
     /**
-     * Constructor for objects of class Step
+     * Creates a new Step with a given number and description
      */
     public Step(int number, String description)
     {
@@ -21,35 +22,35 @@ public class Step
     }
     
     /**
-     * The setNumber method
+     * Stes a new number for the step
      */
     public void setNumber(int number){
         this.number = number;
     }
 
     /**
-     * The getNumber method
+     * Returns the number of the step
      */
     public int getNumber(){
         return number;
     }
     
     /**
-     * The changeDescription method
+     * Changes the description of the step
      */
     public void changeDescription(String description){
         this.description = description;
     }
     
     /**
-     * The getDescription method
+     * Returns the description of the step
      */
     public String getDescription(){
         return description;
     }
     
     /**
-     * The toString method
+     * Returns a String
      */
     public String toString(){
         return number + ". " + description;

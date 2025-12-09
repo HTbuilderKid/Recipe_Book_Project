@@ -1,11 +1,13 @@
 #BlueJ class context
 comment0.target=RecipeHotTest
-comment0.text=\r\n\ The\ test\ class\ RecipeHotTest.\r\n\r\n\ @author\ \ (Chenyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Unit\ tests\ for\ teh\ RecipeHot\ class\r\n\r\n\ @author\ \ (Chenyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ testConstructorAndSetters()
 comment1.text=\r\n\ Default\ constructor\ for\ test\ class\ RecipeHotTest\r\n
 comment2.params=
 comment2.target=void\ testAddIngredientAndStepAndRatingBecauseIAmTooLazyToWriteSeparateTestsForEachOne()
+comment2.text=\r\n\ Tests\ adding\ ingredients,\ steps,\ and\ ratings\ to\ a\ RecipeHot\r\n
 comment3.params=
 comment3.target=void\ testDifficultyLogic()
+comment3.text=\r\n\ Tests\ the\ difficulty\ logic\ of\ RecipeHot\ based\ on\ the\ number\ of\ steps\r\n
 numComments=4

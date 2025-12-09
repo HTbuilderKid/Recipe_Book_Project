@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * Write a description of class RecipeBook here.
+ * Represents a recipe book containing multiple recipes
  *
  * @author (Chenyu)
  * @version (some good version that does good stuff)
@@ -13,7 +13,7 @@ public class RecipeBook
     private String author;
 
     /**
-     * Constructor for objects of class RecipeBook
+     * Creates a recipe book with a given title and author
      */
     public RecipeBook(String title, String author)
     {
@@ -23,7 +23,7 @@ public class RecipeBook
     }
 
     /**
-     * The printBookDetails method
+     * Prints details about the recipe book
      */
     public void printBookDetails() {
         System.out.println("=✯= Recipe Book =✯=");
@@ -33,7 +33,7 @@ public class RecipeBook
     }
 
     /**
-     * The addRecipe method 
+     * Adds a recipe to the book if it doesn't already exists
      */
     public boolean addRecipe(Recipe r) {
         for(Recipe exists : recipes){
@@ -47,7 +47,7 @@ public class RecipeBook
     }
     
     /**
-     * The removeRecipe method 
+     * Removes a recipe from the book by title
      */
     public boolean removeRecipe(String title){
         for(int i = 0; i < recipes.size(); i++){
@@ -60,7 +60,7 @@ public class RecipeBook
     }
 
     /**
-     * The listAllRecipes method 
+     * Lists all recipe title in the book 
      */
     public void listAllRecipes() {
         if (recipes.isEmpty()) {
@@ -74,7 +74,7 @@ public class RecipeBook
     }
 
     /**
-     * The listHotRecipes method
+     * List all hot recipes in the book
      */
     public ArrayList<Recipe> listHotRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -87,7 +87,7 @@ public class RecipeBook
     }
 
     /**
-     * The listColdRecipes method 
+     * List all cold recipes in the book
      */
     public ArrayList<Recipe> listColdRecipes() {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -100,7 +100,7 @@ public class RecipeBook
     }
 
     /**
-     * The searchByTitle method 
+     * Searches recipes by a text in their title
      */
     public ArrayList<Recipe> searchByTitle(String text) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -113,7 +113,7 @@ public class RecipeBook
     }
 
     /**
-     * The searchByIngredient method, which uses the hasIngredient method of the
+     * Searches the recipes that contain a specific ingredient
      */
     public ArrayList<Recipe> searchByIngredient(String ingredientName) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -126,7 +126,7 @@ public class RecipeBook
     }
 
     /**
-     * The searchByTitle method 
+     * Searches recipes by tag
      */
     public ArrayList<Recipe> searchByTag(Tag tag) {
         ArrayList<Recipe> results = new ArrayList<>();
@@ -139,7 +139,7 @@ public class RecipeBook
     }
 
     /**
-     * The findByExactTitle method
+     * Finds a recipe by exact title
      */ 
     public Recipe findByExactTitle(String title) {
         for (Recipe r : recipes) {
@@ -151,7 +151,7 @@ public class RecipeBook
     }
 
     /**
-     * The printRecipeDetails method 
+     * Prints full details of a recipe
      */
     public void printRecipeDetails(String title) {
         Recipe r = findByExactTitle(title);
@@ -184,7 +184,7 @@ public class RecipeBook
 
     
     /**
-     * The rateRecipe method 
+     * Add a rating to a recipe
      */
     public boolean rateRecipe(String title, Rating stars) {
         Recipe r = findByExactTitle(title);
@@ -196,7 +196,7 @@ public class RecipeBook
     }
 
     /**
-     * The listTopRated method 
+     * Lists all recipes that have a 5-star rating
      */
     public ArrayList<Recipe> listTopRated() {
         ArrayList<Recipe> results = new ArrayList<>();

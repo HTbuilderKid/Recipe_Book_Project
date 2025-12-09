@@ -1,19 +1,19 @@
 #BlueJ class context
 comment0.target=RecipeCold
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeForHot\ here.\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Represents\ a\ cold\ recipe\ that\ needs\ chilling\ before\ eating\r\n\ Extends\ the\ Recipe\ class\ and\ adds\ chill\ time\ in\ minutes\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=title\ servings\ chillTime
 comment1.target=RecipeCold(java.lang.String,\ double,\ int)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RecipeForCold\r\n
+comment1.text=\r\n\ Creates\ a\ new\ cold\ recipe\ with\ a\ title,\ number\ of\ servings\ and\ chill\ time\r\n
 comment2.params=title\ servings
 comment2.target=RecipeCold(java.lang.String,\ double)
-comment2.text=\r\n\ A\ second\ constructor\ which\ doesn't\ ask\ the\ user\ to\ input\ a\ cooking\ time\ unless\ they\ know\ it\r\n
+comment2.text=\r\n\ Creates\ a\ new\ cold\ recipe\ with\ a\ title\ and\ number\ of\ servings\r\n\ A\ second\ constructor\ which\ doesn't\ ask\ the\ user\ to\ input\ a\ cooking\ time\ unless\ they\ know\ it\r\n
 comment3.params=
 comment3.target=int\ getChillTime()
-comment3.text=\r\n\ The\ getChillTime\ method\r\n
+comment3.text=\r\n\ Returns\ the\ chill\ time\ of\ the\ recipe\ in\ minutes\r\n
 comment4.params=chillTime
 comment4.target=void\ setCookingTime(int)
-comment4.text=\r\n\ The\ setCookingTime\ method\r\n
+comment4.text=\r\n\ Sets\ the\ chill\ time\ for\ the\ recipe\ in\ minutes\r\n
 comment5.params=
 comment5.target=void\ printDetails()
-comment5.text=\r\n\ The\ printDetails()\r\n
+comment5.text=\r\n\ Prints\ the\ recipe\ details,\ including\ chill\ time\r\n\ Overrides\ the\ printDetails\ method\ in\ Recipe\ class\r\n
 numComments=6

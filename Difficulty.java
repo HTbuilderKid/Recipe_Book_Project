@@ -1,5 +1,5 @@
 /**
- * Write a description of class Recipes here.
+ * Represents the difficulty level of a recipe based off of the number of steps in the recipe
  *
  * @author (Chenyu)
  * @version (a version number or a date)

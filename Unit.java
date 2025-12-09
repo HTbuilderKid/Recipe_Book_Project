@@ -1,5 +1,5 @@
 /**
- * Write a description of class Recipes here.
+ * List of units that are available to use for ingredients
  *
  * @author (Chenyu)
  * @version (a version number or a date)

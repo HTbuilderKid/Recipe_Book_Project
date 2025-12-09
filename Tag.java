@@ -1,5 +1,5 @@
 /**
- * Write a description of class Recipes here.
+ * List of different dietary or nutritional tags that a recipe can have
  *
  * @author (Chenyu)
  * @version (a version number or a date)

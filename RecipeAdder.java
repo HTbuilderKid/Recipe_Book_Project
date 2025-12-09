@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 /**
  * Automatically creates a recipe and adds it to a RecipeBook.
+ * 
+ * It interacts with the user and asks for details such as:
+ * - Recipe title
+ * - Servings
+ * - Type
+ * - Ingredients
+ * - Steps
+ * - Tags
  */
 public class RecipeAdder
 {

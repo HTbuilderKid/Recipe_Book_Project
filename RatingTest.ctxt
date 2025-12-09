@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RatingTest
-comment0.text=\r\n\ The\ test\ class\ RatingTest.\r\n\r\n\ @author\ \ (Chenyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ test\ class\ RatingTest.\r\n\ \r\n\ Tests\ include\:\r\n\ -\ Constrcutor\ and\ getter\ methods\ for\ stars\ and\ comment\r\n\ -\ Changing\ the\ rating\ score\ with\ \ validation(ensures\ that\ it\ remains\ between\ 0\ and\ 5)\r\n\ -\ The\ toString\ method\ for\ correct\ formatting\ of\ the\ stars\ and\ comment\r\n\r\n\ @author\ \ (Chenyu)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ testConstructorAndGetters()
 comment2.params=

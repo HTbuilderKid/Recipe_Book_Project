@@ -3,7 +3,15 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /**
- * Write a description of class RecipeForHot here.
+ * An abstract class representing a Recipe
+ * 
+ * It allows:
+ * - Adding/removing recipes
+ * - Scaling ingredients
+ * - Calculating the difficulty and highest rating
+ * - Printing the recipe details
+ * 
+ * Specific recipes(hot/cold)
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -19,7 +27,7 @@ public abstract class Recipe
     
     
     /**
-     * Constructor for objects of class Recipes
+     * Creates a new Recipe with a given title and servings
      */
     public Recipe(String title, double servings)
     {
@@ -30,6 +38,8 @@ public abstract class Recipe
         this.tags = new HashSet<>();
         this.ratings = new ArrayList<>();
     }
+    
+    // Getters
     
     /**
      * The getTitle method
@@ -74,7 +84,7 @@ public abstract class Recipe
     }
     
     /**
-     * The getDifficulty method
+     * Calculates recipe difficulty based on the number of steps
      */
     public Difficulty getDifficulty(){
         int stepCount = steps.size();
@@ -88,7 +98,7 @@ public abstract class Recipe
     }
     
     /**
-     * The getStars method 
+     * Returns the highest start rating from all ratings
      */
     public int getStars(){
         int max = 0;
@@ -99,6 +109,8 @@ public abstract class Recipe
         }
         return max;
     }
+    
+    // Add methods
     
     /**
      * The addIngredient method
@@ -148,6 +160,7 @@ public abstract class Recipe
         return tags.contains(tag);
     }
     
+    // Check methods
     
     /**
      * The hasIngredient method
@@ -162,7 +175,7 @@ public abstract class Recipe
     }
     
     /**
-     * The scale method
+     * Scales all ingredients based on the new number of servings
      */
     public void scale(double newServings){
         double factor = newServings/servings;
@@ -209,6 +222,8 @@ public abstract class Recipe
         }
         return false;
     }
+    
+    // Remove methods
     
     /**
      * The removeStep method 

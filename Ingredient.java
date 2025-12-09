@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class RecipeForHot here.
+ * Represents a single ingredient in a recipe
+ * Stores the ingredient's name, amount, and unit
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -13,7 +14,7 @@ public class Ingredient
     
     
     /**
-     * Constructor for objects of class Ingredient
+     * Creates a new Ingredient with a given name, amount, and unit
      */
     public Ingredient(String name, double amount, Unit unit){
         this.name = name;
@@ -22,56 +23,56 @@ public class Ingredient
     }
     
     /**
-     * The changeName method
+     * Changes the name of the ingredient
      */
     public void changeName(String name){
         this.name = name;
     }
     
     /**
-     * The changeAmount method
+     * Changes the amount of the ingredient
      */
     public void changeAmount(double amount){
         this.amount = amount;
     }
     
     /**
-     * The changeUnit method
+     * Changes the unit of the ingredient
      */
     public void changeUnit(Unit unit){
         this.unit = unit;
     }
     
     /**
-     *The getName method
+     * Returns the name of the ingredient
      */
     public String getName(){
         return name;
     }
     
     /**
-     * The getAmount method
+     * Returns the amount of the ingredient
      */
     public double getAmount(){
         return amount;
     }
     
     /**
-     * The getUnit method
+     * Returns the unit of the ingredient
      */
     public Unit getUnit(){
         return unit;
     }
     
     /**
-     * The scale method
+     * Scales the ingredient amount by a given factor
      */
     public void scale(double factor){
         this.amount = this.amount*factor;
     }
     
     /**
-     * The toString method
+     * Returns a string
      */
     public String toString(){
         return amount + " " + unit + " of " + name;

@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class RecipeForHot here.
+ * Represents a hot recipe that requires cooking
+ * Inherits from the abstract Recipe class
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -9,15 +10,16 @@ public class RecipeHot extends Recipe
 {
     private int cookingTime;
     /**
-     * Constructor for objects of class RecipeForCold
+     * Creates a recipeHot with a given title, servings and cooking time
      */
     public RecipeHot(String title, double servings, int cookingTime)
     {
         super(title, servings);
         this.cookingTime = cookingTime;
     }
-    
+
     /**
+     * Creates a recipeHot with a given title and servings
      * A second constructor which doesn't ask the user to input a cooking time unless they know it
      */
     public RecipeHot(String title, double servings)
@@ -27,20 +29,21 @@ public class RecipeHot extends Recipe
     }
 
     /**
-     * The getCookingTime method 
+     * Returns the cooking time of the recipe in minutes
      */
     public int getCookingTime(){
         return cookingTime;
     }
-    
+
     /**
-     * The setCookingTime method, 
+     * Sets the cooking time for the recipe
      */
     public void setCookingTime(int cookingTime){
         this.cookingTime = cookingTime;
     }
+
     /**
-     * The printDetails method
+     * Prints all details of the hor recipe
      */
     @Override
     public void printDetails()

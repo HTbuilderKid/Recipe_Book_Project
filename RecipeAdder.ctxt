@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RecipeAdder
-comment0.text=\r\n\ Automatically\ creates\ a\ recipe\ and\ adds\ it\ to\ a\ RecipeBook.\r\n
+comment0.text=\r\n\ Automatically\ creates\ a\ recipe\ and\ adds\ it\ to\ a\ RecipeBook.\r\n\ \r\n\ It\ interacts\ with\ the\ user\ and\ asks\ for\ details\ such\ as\:\r\n\ -\ Recipe\ title\r\n\ -\ Servings\r\n\ -\ Type\r\n\ -\ Ingredients\r\n\ -\ Steps\r\n\ -\ Tags\r\n
 comment1.params=book
 comment1.target=RecipeAdder(RecipeBook)
 comment1.text=\r\n\ Constructor\ links\ this\ RecipeAdder\ to\ a\ specific\ RecipeBook.\r\n

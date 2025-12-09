@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class RecipeForHot here.
+ * Represents a cold recipe that needs chilling before eating
+ * Extends the Recipe class and adds chill time in minutes
  *
  * @author (Varshiha)
  * @version (a version number or a date)
@@ -10,7 +11,7 @@ public class RecipeCold extends Recipe
     private int chillTime;
     
     /**
-     * Constructor for objects of class RecipeForCold
+     * Creates a new cold recipe with a title, number of servings and chill time
      */
     public RecipeCold(String title, double servings, int chillTime)
     {
@@ -19,6 +20,7 @@ public class RecipeCold extends Recipe
     }
     
     /**
+     * Creates a new cold recipe with a title and number of servings
      * A second constructor which doesn't ask the user to input a cooking time unless they know it
      */
     public RecipeCold(String title, double servings)
@@ -28,21 +30,22 @@ public class RecipeCold extends Recipe
     }
 
     /**
-     * The getChillTime method
+     * Returns the chill time of the recipe in minutes
      */
     public int getChillTime(){
         return chillTime;
     }
     
     /**
-     * The setCookingTime method
+     * Sets the chill time for the recipe in minutes
      */
     public void setCookingTime(int chillTime){
         this.chillTime = chillTime;
     }
     
     /**
-     * The printDetails()
+     * Prints the recipe details, including chill time
+     * Overrides the printDetails method in Recipe class
      */
     @Override
     public void printDetails()

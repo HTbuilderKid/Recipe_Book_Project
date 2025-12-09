@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * The test class RecipesTest.
+ * This class is used to test the Recipe class
  *
  * @author  (Chenyu)
  * @version (a version number or a date)

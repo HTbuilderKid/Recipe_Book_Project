@@ -1,18 +1,18 @@
 #BlueJ class context
 comment0.target=Rating
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecipeForHot\ here.\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Represents\ a\ rating\ for\ a\ recipe\ that\ includes\ a\ star\ score\ and\ a\ comment\r\n\r\n\ @author\ (Varshiha)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=stars\ comment
 comment1.target=Rating(int,\ java.lang.String)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Rating\r\n
+comment1.text=\r\n\ Creates\ a\ rating\ with\ a\ given\ start\ and\ comment\r\n\ Ensuures\ that\ the\ start\ is\ between\ 0\ and\ 5\r\n
 comment2.params=
 comment2.target=int\ getRating()
-comment2.text=\r\n\ The\ getRating\ method,\ \r\n
+comment2.text=\r\n\ Returns\ the\ star\ rating\r\n
 comment3.params=
 comment3.target=java.lang.String\ getComment()
-comment3.text=\r\n\ The\ getComment\ method,\ \r\n
+comment3.text=\r\n\ Returns\ the\ comment\ associated\ with\ that\ rating\r\n
 comment4.params=newStar
 comment4.target=void\ changeScore(int)
-comment4.text=\r\n\ The\ changeScore\ method,\ \r\n
+comment4.text=\r\n\ Changes\ the\ star\ score\ of\ the\ rating\r\n\ Ensures\ that\ it\ remains\ between\ 0\ and\ 5\r\n
 comment5.params=
 comment5.target=java.lang.String\ toString()
 comment5.text=\r\n\ The\ toString\ method,\ \r\n
