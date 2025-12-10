@@ -11,10 +11,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         RecipeBook book = new RecipeBook("My Recipes", "Gigachad");
         RecipeAdder adder = new RecipeAdder(book);
+        RecipeHot hot1 = new RecipeHot("Tomato Soup", 2);
+        book.addRecipe(hot1);
 
         boolean running = true;
         while(running){
-            System.out.println("=== Welcome to GigaMan's Recipe Book Creator! ===");
+            System.out.println("\n=== Welcome to GigaMan's Recipe Book Creator! ===");
             System.out.println("1. Add A Recipe");
             System.out.println("2. List All Recipes");
             System.out.println("3. Print Recipe Book Details");
@@ -25,7 +27,6 @@ public class Main {
             switch(choice){
                 case "1" :
                     adder.createAndAddRecipe();
-                    System.out.println("\n=== Your Recipe has been added! ===");
                     break;
                 case "2" :
                     book.listAllRecipes();
@@ -34,9 +35,13 @@ public class Main {
                     System.out.println("Enter the recipe title that you want to view");
                     String title = scanner.nextLine();
                     book.printRecipeDetails(title);
+                    break;
+                    
                 case "4":
+                    running = false;
                     System.out.println("Thank you! Goodbye");
                     break;
+                    
                 default:
                     System.out.println("Invalid choice...Try again");
             }
