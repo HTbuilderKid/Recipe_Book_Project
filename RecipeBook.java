@@ -43,6 +43,7 @@ public class RecipeBook
             }
         }
         recipes.add(r);
+        System.out.println("Thank you for your contribution to the RecipeBook! Your Recipe was successfully added!");
         return true;
     }
     
