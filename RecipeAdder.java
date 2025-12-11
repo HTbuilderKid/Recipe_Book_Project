@@ -31,8 +31,7 @@ public class RecipeAdder
     public void createAndAddRecipe() {
         Recipe recipe = createRecipe();  
         book.addRecipe(recipe);          
-        System.out.println("Thank you for your contribution to the RecipeBook! Your Recipe was successfully added!");
-    }
+         }
 
     /**
      * Builds and returns a new Recipe object (unchanged from your logic).
