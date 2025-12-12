@@ -10,16 +10,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         RecipeBook book = new RecipeBook("My Recipes", "Gigachad");
+        book.addRecipe(DefaultRecipes.tomatoSoup());
+        book.addRecipe(DefaultRecipes.poutine());
         RecipeAdder adder = new RecipeAdder(book);
-
-        System.out.println("\n=== Welcome to GigaMan's Recipe Book Creator! ===");
-        adder.createAndAddRecipe();
-        System.out.println("\n=== Your Recipe has been added! ===");
-        book.listAllRecipes();
-
         boolean running = true;
         while(running){
-            System.out.println("=== Welcome to GigaMan's Recipe Book Creator! ===");
+            System.out.println("\n=== Welcome to GigaMan's Recipe Book Creator! ===");
             System.out.println("1. Add A Recipe");
             System.out.println("2. List All Recipes");
             System.out.println("3. Print Recipe Book Details");
