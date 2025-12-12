@@ -1,9 +1,10 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Write a description of class Main here.
  *
- * @author (Chenyu)
+ * @author (Chenyu & Varshiha)
  * @version (Elon Musk)
  */
 public class Main {
@@ -12,32 +13,54 @@ public class Main {
         RecipeBook book = new RecipeBook("My Recipes", "Gigachad");
         book.addRecipe(DefaultRecipes.tomatoSoup());
         book.addRecipe(DefaultRecipes.poutine());
+        book.addRecipe(DefaultRecipes.chocolateCake());
+        book.addRecipe(DefaultRecipes.iceCream());
+        book.addRecipe(DefaultRecipes.creamyGarlicPasta());
+
         RecipeAdder adder = new RecipeAdder(book);
         boolean running = true;
         while(running){
             System.out.println("\n=== Welcome to GigaMan's Recipe Book Creator! ===");
             System.out.println("1. Add A Recipe");
             System.out.println("2. List All Recipes");
-            System.out.println("3. Print Recipe Book Details");
-            System.out.println("4. Exit");
-            System.out.println("Enter a choice (1-4)");
+            System.out.println("3. List All Hot Recipes");
+            System.out.println("4. List All Cold Recipes");
+            //We should add list top rated recipes, scale recipes, remove recipe 
+            System.out.println("5. Print Recipe Book Details");
+            System.out.println("6. Exit");
+            System.out.println("Enter a choice (1-6)");
             String choice = scanner.nextLine();
 
             switch(choice){
                 case "1" :
                     adder.createAndAddRecipe();
+                    System.out.println("Thank you for your contribution to the RecipeBook! Your Recipe was successfully added!");
                     break;
                 case "2" :
                     book.listAllRecipes();
                     break;
                 case "3" :
+                    ArrayList<Recipe> hotList = book.listHotRecipes();
+                    System.out.println("=== Hot Recipes ===");
+                    for(Recipe r : hotList){
+                        System.out.println("- " + r.getTitle());
+                    }
+                    break;
+                case "4" :
+                    ArrayList<Recipe> coldList = book.listColdRecipes();
+                    System.out.println("=== Cold Recipes ===");
+                    for(Recipe r : coldList){
+                        System.out.println("- " + r.getTitle());
+                    }
+                    break;
+                case "5" :
                     System.out.println("Enter the recipe title that you want to view");
                     String title = scanner.nextLine();
                     book.printRecipeDetails(title);
                     break;
-                case "4":
+                case "6" :
                     running = false;
-                    System.out.println("Thank you! Goodbye");
+                    System.out.println("Thank you! I hope your belly is full. Goodbye");
                     break;
                 default:
                     System.out.println("Invalid choice...Try again");

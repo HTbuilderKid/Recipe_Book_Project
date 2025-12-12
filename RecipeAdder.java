@@ -61,7 +61,7 @@ public class RecipeAdder
 
             System.out.print("Amount: ");
             double amount = Double.parseDouble(scanner.nextLine());
-            System.out.print("Unit (G, KG, ML, L, TSP, TBSP, CUP, OZ, UNIT): ");
+            System.out.print("Unit (G, KG, ML, L, TSP, TBSP, CUP, OZ, POUND, UNIT): ");
             Unit unit = Unit.valueOf(scanner.nextLine().toUpperCase());
             recipe.addIngredient(new Ingredient(name, amount, unit));
         }

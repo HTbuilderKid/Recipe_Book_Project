@@ -5,5 +5,5 @@
  * @version (a version number or a date)
  */
 public enum Unit{
-    G, KG, ML, L, TSP, TBSP, CUP, OZ, UNIT;
+    G, KG, ML, L, TSP, TBSP, CUP, OZ, POUND, UNIT;
 }
