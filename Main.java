@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Main here.
+ * This is the driver class
  *
  * @author (Chenyu & Varshiha)
  * @version (Elon Musk)
