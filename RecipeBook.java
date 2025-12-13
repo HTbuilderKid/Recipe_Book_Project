@@ -52,9 +52,11 @@ public class RecipeBook
         for(int i = 0; i < recipes.size(); i++){
             if(recipes.get(i).getTitle().equalsIgnoreCase(title)){
                 recipes.remove(i);
+                System.out.println("Recipe was succesfully removed.");
                 return true;
             }
         }
+        System.out.println("Recipe not found.");
         return false;
     }
 
